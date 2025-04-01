@@ -1,11 +1,11 @@
 import React from 'react'
 
-const About = () => {
+const page = ({ params }) => {
   return (
     <div className='text-black'>
-      About
+        user is {params.id}
     </div>
   )
 }
 
-export default About
+export default page
