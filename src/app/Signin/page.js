@@ -1,9 +1,9 @@
 
 import React from 'react'
-
+import '@/assets/scss/pages/_signin.scss'
 const page = () => {
   return (
-    <div className='bg-[rgb(29,29,42)] h-full w-full items-center  flex justify-between'>
+    <div className='bgcolor h-full w-full items-center  flex justify-between'>
         <div className=' relative left-50 w-[400px] ' >
           
               <div className='text-center'>
