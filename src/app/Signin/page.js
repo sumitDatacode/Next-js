@@ -1,6 +1,8 @@
 
 import React from 'react'
 import '@/assets/scss/main.scss'
+import Button from '@/components/Button';
+
 const page = () => {
   return (
     <div className='bgcolor h-full w-full items-center  flex justify-between'>
@@ -22,7 +24,7 @@ const page = () => {
 
 
 
-                <button className='btn'>LogIn</button>
+               <Button/>
               </form>
         </div>
 
