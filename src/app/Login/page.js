@@ -1,6 +1,6 @@
 
 import React from 'react'
-import '@/assets/scss/main.scss'
+
 import Button from '@/components/Button';
 
 const page = () => {
