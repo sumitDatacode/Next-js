@@ -3,7 +3,7 @@ import '@/assets/scss/main.scss'
 const page = () => {
   return (
     <div>
-      Home  
+      Create Book Page
     </div>
   )
 }

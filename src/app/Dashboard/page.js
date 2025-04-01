@@ -2,8 +2,8 @@ import React from 'react'
 import '@/assets/scss/main.scss'
 const page = () => {
   return (
-    <div>
-      Home  
+    <div className='text-black'>
+    Dashboard page
     </div>
   )
 }
