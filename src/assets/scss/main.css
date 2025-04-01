@@ -1,0 +1,12 @@
+.btn {
+  margin: 25px auto;
+  background-color: #4A83F6;
+  width: 120px;
+  margin-left: 40%;
+  padding: 6px;
+  border-radius: calc(infinity * 1px);
+}
+
+.bgcolor {
+  background-color: rgb(29, 29, 42);
+}/*# sourceMappingURL=main.css.map */

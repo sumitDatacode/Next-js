@@ -1,6 +1,6 @@
 
 import React from 'react'
-import '@/assets/scss/pages/_signin.scss'
+import '@/assets/scss/main.scss'
 const page = () => {
   return (
     <div className='bgcolor h-full w-full items-center  flex justify-between'>
@@ -22,7 +22,7 @@ const page = () => {
 
 
 
-                <button className='mt-10 bg-[#4A83F6] w-30 p-2 rounded-full ml-[40%] '>LogIn</button>
+                <button className='btn'>LogIn</button>
               </form>
         </div>
 
