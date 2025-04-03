@@ -26,12 +26,13 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
 
-       <div className="flex justify-between h-full   m-auto">
+       <div className="flex justify-between h-full  m-auto">
            <Sidebar/>
        
-           <div className="flex w-full flex-col">
+           <div className="flex ml-12 mr-12 w-full flex-col">
               <TopNavbar/>
-                {children}
+              {children}
+             
           </div>
        </div>
        
