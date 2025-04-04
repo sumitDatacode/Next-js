@@ -9,7 +9,9 @@ import Collection from '../assets/images/collection.png'
 
 const Sidebar = () => {
   return (
-    <div className='flex  border-r border-gray-600 h-full flex-col pt-[40px] items-start  w-[400px]'>
+   <div className='flex'>
+  
+    <div className=' fixed  left-0 top-0 h-full  w-[400px] flex  border-r border-[#282837]  flex-col pt-[40px] items-start  '>
     <div className="pl-[50px]" >
        <Logo />
     </div>
@@ -27,6 +29,11 @@ const Sidebar = () => {
         <Link href="/Dashboard" >Favourite</Link>
     </div>
  </div>
+
+
+
+   
+ </div> 
   )
 }
 
