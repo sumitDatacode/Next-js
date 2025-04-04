@@ -11,7 +11,7 @@ const Sidebar = () => {
   return (
    <div className='flex'>
   
-    <div className=' fixed  left-0 top-0 h-full  w-[400px] flex  border-r border-[#282837]  flex-col pt-[40px] items-start  '>
+    <div className=' fixed  left-0 top-0 h-full  w-[350px] flex  border-r border-[#282837]  flex-col pt-[40px] items-start  '>
     <div className="pl-[50px]" >
        <Logo />
     </div>

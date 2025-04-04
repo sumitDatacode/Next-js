@@ -7,6 +7,7 @@ import img1 from "@/assets/images/comic1.png"
 import img2 from "@/assets/images/comic2.png"
 import img3 from "@/assets/images/comic3.png"
 import img4 from "@/assets/images/comic4.png"
+import kobra from "@/assets/images/kobra.png"
 const DashboardPage = () => {
 
 
@@ -25,32 +26,40 @@ const DashboardPage = () => {
 
   return (
   <div>
-  
-    <div className='relative w-[640px]'>
-           <Image src={Batman}  alt="batman img" className='rounded-lg' />
-          <div className='absolute bottom-25 w-full'>
-              <p className='pl-5 text-lg'>Frank Miller</p>
-              <div className='flex  justify-between items-center pl-5 pr-5'>
-                  <h3 className='text-4xl w-[150px] font-[700] '>Batman: <span className='whitespace-nowrap'>The Dark Knight</span> </h3>
-                  <Button/>
-              </div>
-          </div> 
-            
-    </div>
-     
+      <div className='flex justify-between items-center'>
 
+           <div className='relative w-[640px]'>
+                  <Image src={Batman}  alt="batman img" className='rounded-2xl ' />
+                  <div className='absolute bottom-25 w-full'>
+                      <p className='pl-5 text-lg'>Frank Miller</p>
+                      <div className='flex  justify-between items-end pl-5 pr-5'>
+                          <h3 className='text-4xl w-[150px] font-[700] '>Batman: <span className='whitespace-nowrap'>The Dark Knight</span> </h3>
+                          <Button/>
+                      </div>
+                  </div> 
+                    
+            </div>
+
+            <div>
+                      <h2 className='text-3xl font-bold '>Continue Reading</h2>
+                      <Image src={kobra} className='rounded-2xl mt-8 mb-5 w-[245px]' alt="kobra img" />
+                       <h2 className='text-2xl font-bold text-center'>Kobra Kal: Ultimate</h2>
+                             
+            </div>
+     
+       </div>
 
 
     {/* comics section  */}
-    <div>
-            <h2 className='text-2xl font-bold mt-10'>Top Rated Comics</h2>
+    <div className='mt-10 mb-10'>
+            <h2 className='text-2xl font-bold'>Top Rated Comics</h2>
 
-            <div className='flex mt-10 justify-between w-[80%] '>
+            <div className='flex mt-10 justify-between w-[90%] '>
             {
                 comics.map((comic, index)=>{
                     return (
                              <div key={index}>
-                                    <Image src={comic.image} className='rounded-lg' alt={comic.title} />
+                                    <Image src={comic.image} className='rounded-2xl' alt={comic.title} />
                                     <h2 className='text-[#4A83F6]  mt-1 font-[700] mb-1'>{comic.title}</h2>
                                     <h2>{comic.name}</h2>
                               </div>
