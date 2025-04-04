@@ -26,14 +26,14 @@ const DashboardPage = () => {
 
   return (
   <div>
-      <div className='flex justify-between items-center'>
+      <div className='flex flex-wrap justify-between items-center'>
 
            <div className='relative w-[640px]'>
                   <Image src={Batman}  alt="batman img" className='rounded-2xl ' />
-                  <div className='absolute bottom-20 w-full'>
+                  <div className='absolute bottom-5 md:bottom-20 w-full'>
                       <p className='pl-7 text-lg'>Frank Miller</p>
-                      <div className='flex  justify-between items-end pl-7 pr-7'>
-                          <h3 className='text-4xl w-[150px] font-[700] '>Batman: <span className='whitespace-nowrap'>The Dark Knight</span> </h3>
+                      <div className='flex flex-wrap justify-between items-end pl-7 pr-7'>
+                          <h3 className='text-4xl w-full md:w-[150px] font-[700]'>Batman: <span className='whitespace-nowrap'>The Dark Knight</span> </h3>
                           <Button text="Read More"/>
                       </div>
                   </div> 
@@ -54,11 +54,11 @@ const DashboardPage = () => {
     <div className='mt-10 mb-10'>
             <h2 className='text-2xl font-bold'>Top Rated Comics</h2>
 
-            <div className='flex mt-10 justify-between w-[90%] '>
+            <div className='flex flex-wrap gap-6 justify-between w-[90%] '>
             {
                 comics.map((comic, index)=>{
                     return (
-                             <div key={index}>
+                             <div key={index} className='mt-10'>
                                     <Image src={comic.image} className='rounded-2xl' alt={comic.title} />
                                     <h2 className='text-[#4A83F6]  mt-1 font-[700] mb-1'>{comic.title}</h2>
                                     <h2>{comic.name}</h2>
