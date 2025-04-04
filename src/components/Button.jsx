@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Button = () => {
+const Button = (props) => {
   return (
-    <button className='btn'>LogIn</button>
+    <button className='btn font-[700] text-lg'>{props.text}</button>
   )
 }
 

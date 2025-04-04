@@ -38,7 +38,7 @@ const Sidebar = () => {
                 {
                         navList.map((item)=>{
                             return (
-                                <div key={item.href} className='flex gap-4  w-[18rem]  rounded-2xl  text-xl mt-2  p-3 pl-[50px]'>
+                                <div key={item.href} className='flex gap-4  w-[18rem]  rounded-2xl  text-xl mt-3  p-3 pl-[50px]'>
                                     <Image src={item.img} className='object-contain' alt={item.text}/>
                                     <Link href={item.href}>{item.text} </Link>
                                 </div>    

@@ -30,11 +30,11 @@ const DashboardPage = () => {
 
            <div className='relative w-[640px]'>
                   <Image src={Batman}  alt="batman img" className='rounded-2xl ' />
-                  <div className='absolute bottom-25 w-full'>
-                      <p className='pl-5 text-lg'>Frank Miller</p>
-                      <div className='flex  justify-between items-end pl-5 pr-5'>
+                  <div className='absolute bottom-20 w-full'>
+                      <p className='pl-7 text-lg'>Frank Miller</p>
+                      <div className='flex  justify-between items-end pl-7 pr-7'>
                           <h3 className='text-4xl w-[150px] font-[700] '>Batman: <span className='whitespace-nowrap'>The Dark Knight</span> </h3>
-                          <Button/>
+                          <Button text="Read More"/>
                       </div>
                   </div> 
                     
