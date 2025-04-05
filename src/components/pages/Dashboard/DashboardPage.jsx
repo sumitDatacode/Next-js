@@ -1,13 +1,13 @@
 import Batman from '@/assets/images/batman.png'
 import Image from 'next/image'
 import Button from '@/components/Button'
-
+import RightLoader from '@/components/RightLoader'
 
 import img1 from "@/assets/images/comic1.png"
 import img2 from "@/assets/images/comic2.png"
 import img3 from "@/assets/images/comic3.png"
 import img4 from "@/assets/images/comic4.png"
-import kobra from "@/assets/images/kobra.png"
+
 const DashboardPage = () => {
 
 
@@ -40,12 +40,7 @@ const DashboardPage = () => {
                     
             </div>
 
-            <div>
-                      <h2 className='text-3xl font-bold '>Continue Reading</h2>
-                      <Image src={kobra} className='rounded-2xl mt-8 mb-5 w-[245px]' alt="kobra img" />
-                       <h2 className='text-2xl font-bold text-center'>Kobra Kal: Ultimate</h2>
-                             
-            </div>
+           <RightLoader/>
      
        </div>
 
