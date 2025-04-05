@@ -17,7 +17,7 @@ const Table = () => {
 
   return (
     <div className='font-[700]'>
-      <h2 className='text-2xl'>Reading paln</h2>
+      <h2 className='text-2xl'>Reading Plan</h2>
       <div className='flex gap-x-14 mt-12 mb-12'>
           <h1 className='text-4xl'>Chapters: <span className='text-[#4A83F6]'>20</span></h1>
           <h1 className='text-4xl'>Days: <span className='text-[#4A83F6]'>20</span></h1>
@@ -31,7 +31,7 @@ const Table = () => {
               className="flex justify-between items-center "
             >
               <div className="w-1/7  text-xl  font-[700]">Chapter {chapter.id}</div>
-              <div className="w-1/5  text-xl font-[400]">{chapter.title}</div>
+              <div className="w-1/4  text-xl font-[400]">{chapter.title}</div>
               <div className="w-1/5  text-xl text-[#4A83F6] font-[400]">{chapter.date}</div>
               <div className={`w-1/7 text-xl  font-[400] ${statusColors[chapter.status]}`}>
                 {chapter.status}
