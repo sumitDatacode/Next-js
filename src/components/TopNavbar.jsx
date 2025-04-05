@@ -32,7 +32,7 @@ const TopNavbar = () => {
                 profileView && (
                         <div className=' absolute z-[999px] text-lg  bg-[#4b4b4b] right-0 top-18 rounded-2xl w-[250px] h-[250px]'>
                               <h1 className='p-6 border-b font-[600]'>Akshay Mandliya</h1>
-                              <div className='p-6 flex justify-between'>
+                              <div className='pl-6 pt-3 pr-6 flex justify-between'>
                                   <p className='font-[400]'>Status</p>
                                   <p className='text-[#7DEF0B] font-[700]'>Active</p>
                               </div>
