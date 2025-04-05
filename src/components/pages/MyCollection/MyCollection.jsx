@@ -1,5 +1,6 @@
 import React from 'react'
 import RightLoader from '@/components/RightLoader'
+import Table from '@/components/Table';
 const MyCollection = () => {
     const smallHeading = {
         title: 'Started:',
@@ -26,6 +27,8 @@ const MyCollection = () => {
             </div>
             
          </div>
+
+         <Table/>
            
     </div>
   )
