@@ -40,9 +40,8 @@ const DashboardPage = () => {
                     
             </div>
 
-           <RightLoader/>
-     
-       </div>
+           <RightLoader heading="Continue Reading" bottomHeading="Kobra Kal: Ultimate"/>
+                 </div>
 
 
     {/* comics section  */}
