@@ -26,7 +26,7 @@ const TopNavbar = () => {
         <div className='flex  items-center gap-10' >
           <FaBell className='text-[25px] object-contain'/>
           <div className='relative'>
-             <Image src={ProfileImg} alt="Profile img" onClick={profilecheck}/>
+             <Image src={ProfileImg} alt="Profile img" className='cursor-pointer' onClick={profilecheck}/>
 
              {
                 profileView && (
