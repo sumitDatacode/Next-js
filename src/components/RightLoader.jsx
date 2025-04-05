@@ -17,7 +17,7 @@ const RightLoader = ({heading, smallHeading, bottomHeading}) => {
     }
     <Image src={kobra} className='rounded-2xl mt-4 mb-5 w-[245px]' alt="kobra img" />
     {
-           bottomHeading ? ( <h2 className='text-2xl font-bold text-center'>{bottomHeading}</h2>
+           bottomHeading ? ( <h2 className='text-2xl font-bold text-left'>{bottomHeading}</h2>
            ) : <></>
     }
      </div>       

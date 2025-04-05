@@ -24,7 +24,7 @@ const Table = () => {
     
       </div>
 
-      <div className="space-y-6 ">
+      <div className="space-y-6 mb-10">
           {table.map((chapter) => (
             <div
               key={chapter.id}
