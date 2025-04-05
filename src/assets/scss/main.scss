@@ -1,11 +1,13 @@
 @import './base/variables';
 @import './components/button';
 @import './pages/signin';
+/* styles/globals.css or app/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 
 *{
    box-sizing: border-box;
-
+   font-family: 'Montserrat', sans-serif;
 }
 
 html,
