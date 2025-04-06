@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
        <div className="flex justify-between h-full  m-auto">
            <Sidebar/>
        
-           <div className=" ml-[400px]  h-screen pl-12 flex  pr-12 w-full flex-col">
+           <div className=" md:ml-[400px]  h-screen pl-12 flex  pr-12 w-full flex-col">
               <TopNavbar/>
               {children}
              

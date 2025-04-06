@@ -1,5 +1,6 @@
 "use client"
 // import { useRouter } from "next/router";
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Logo from './Logo';
@@ -8,10 +9,12 @@ import Bookmark from '../assets/images/bookmark.png'
 import Collection from '../assets/images/collection.png'
 import setting from '../assets/images/setting.png'
 import logOut from '../assets/images/logout.png'
+import { Menu, X } from 'lucide-react'; // Add hamburger icon from lucide-react (or use your own)
 
 const Sidebar = () => {
 
     //  const router = useRouter()
+    const [isOpen, setIsOpen] = useState(false);
 
      const navList = [
         {"href" : "/dashboard" , "text" : "Dashboard", "img": DashboardIcon},
@@ -27,7 +30,7 @@ const Sidebar = () => {
   return (
    <div className='flex'>
   
-    <div className=' fixed left-0 top-0 h-full  w-[350px] flex  border-r border-[#282837] justify-between flex-col pt-[40px] items-start  '>
+    <div className='hidden md:flex fixed left-0 top-0 h-full  w-[350px]  border-r border-[#282837] justify-between flex-col pt-[40px] items-start  '>
      <div>
                 <div className="pl-[50px]" >
                 <Logo />
