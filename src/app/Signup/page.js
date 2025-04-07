@@ -1,9 +1,9 @@
 import React from 'react'
-
+import SignUpPage from '@/components/pages/SignUp'
 const page = () => {
   return (
     <div>
-      Signup page
+      <SignUpPage/>
     </div>
   )
 }
