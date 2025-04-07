@@ -15,7 +15,15 @@ const RightLoader = ({heading, smallHeading, bottomHeading}) => {
         ) : <></>
         
     }
-    <Image src={kobra} className='rounded-2xl mt-4 mb-5 w-[245px]' alt="kobra img" />
+    <div className='relative'>
+         <Image src={kobra} className='rounded-2xl mt-4 mb-5 w-full' alt="kobra img" />
+         <div className='loader flex items-center justify-center absolute top-[50%] left-[50%] translate-[-50%] rounded-full w-[115px] h-[115px] border-[20px] border-t-[#4A83F6] border-l-[#4A83F6] '>
+            <p className='text-[#4A83F6] text-2xl font-[700]'>39%</p> 
+         </div>
+
+    </div>
+   
+
     {
            bottomHeading ? ( <h2 className='text-2xl font-bold text-left'>{bottomHeading}</h2>
            ) : <></>
