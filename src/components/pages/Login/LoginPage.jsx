@@ -12,17 +12,18 @@ const LoginPage = () => {
           </div>
 
           <form>
-            <h1 className='mt-8 text-3xl text-center'>Login In To Get Inside</h1>
+            <h1 className='mt-8 text-3xl text-center font-[500]'>Login In To Get Inside</h1>
                 <br/>
             <label className='text-sm'>Email</label> <br/>
             <input type="email" className='border h-10 mt-[4px] rounded-[8px] w-full' />
              <br/> <br/>
             <label className='text-sm'>Password</label> <br/>
             <input type="password" className='border h-10 mt-[4px] rounded-[8px] w-full' />
-
-
-
-           <Button/>
+         
+           <div className='text-center mt-6'>
+           <Button text="Log in"/>
+         
+           </div>
           </form>
     </div>
 
