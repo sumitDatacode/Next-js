@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   console.log(pathname)
-  const hideLayout = ['/login', '/signup'];
+  const hideLayout = ['/login', '/signup', '/createbook'];
 
   const shouldHideLayout = hideLayout.includes(pathname);
 
