@@ -19,12 +19,13 @@ const Sidebar = () => {
      const navList = [
         {"href" : "/dashboard" , "text" : "Dashboard", "img": DashboardIcon},
         {"href" : "/mycollection" , "text" : "My Collection", "img": Collection},
-        {"href" : "/favourite" , "text" : "Favourite", "img": Bookmark}
+        {"href" : "/favourite" , "text" : "Favourite", "img": Bookmark},
+        {"href" : "/createbook" , "text" : "Create Book", "img": Bookmark}
      ]
 
      const bottomNavList = [
         {"href" : "/setting" , "text" : "Settings", "img": setting},
-        {"href" : "/logout" , "text" : "Log Out", "img": logOut},
+        {"href" : "/login" , "text" : "Log Out", "img": logOut},
        
      ]
   return (
