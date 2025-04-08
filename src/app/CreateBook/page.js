@@ -1,9 +1,9 @@
 import React from 'react'
-
+import CreateBookPage from '@/components/pages/CreateBook'
 const page = () => {
   return (
     <div>
-      create page
+      <CreateBookPage/>
     </div>
   )
 }
