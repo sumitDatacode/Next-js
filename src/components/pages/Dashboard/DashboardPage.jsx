@@ -2,7 +2,7 @@ import Batman from '@/assets/images/batman.png'
 import Image from 'next/image'
 import Button from '@/components/Button'
 import RightLoader from '@/components/RightLoader'
-
+import Link from 'next/link'
 import img1 from "@/assets/images/comic1.png"
 import img2 from "@/assets/images/comic2.png"
 import img3 from "@/assets/images/comic3.png"
@@ -34,7 +34,7 @@ const DashboardPage = () => {
                       <p className='pl-7 text-lg'>Frank Miller</p>
                       <div className='flex flex-wrap justify-between items-end pl-7 pr-7'>
                           <h3 className='text-4xl w-full md:w-[150px] font-[700]'>Batman: <span className='whitespace-nowrap'>The Dark Knight</span> </h3>
-                          <Button text="Read More"/>
+                        <Link href="/book">  <Button text="Read More"/></Link>
                       </div>
                   </div> 
                     
