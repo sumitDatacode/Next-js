@@ -31,15 +31,15 @@ const DashboardPage = () => {
            <div className='relative w-[640px]'>
                   <Image src={Batman}  alt="batman img" className='rounded-2xl ' />
                   <div className='absolute bottom-5 md:bottom-20 w-full'>
-                      <p className='pl-7 text-lg'>Frank Miller</p>
-                      <div className='flex flex-wrap justify-between items-end pl-7 pr-7'>
-                          <h3 className='text-4xl w-full md:w-[150px] font-[700]'>Batman: <span className='whitespace-nowrap'>The Dark Knight</span> </h3>
-                        <Link href="/book">  <Button text="Read More"/></Link>
+                      <p className='pl-4 md:pl-7 text-lg'>Frank Miller</p>
+                      <div className='px-4  flex flex-wrap justify-between items-end md:px-7'>
+                          <h3 className='text-3xl md:text-4xl w-full md:w-[150px] font-[700]'>Batman: <span className='whitespace-nowrap'>The Dark Knight</span> </h3>
+                        <Link href="/book">  <Button text="Read More" /></Link>
                       </div>
                   </div> 
                     
             </div>
-           <div>
+           <div className='flex justify-center  w-full md:w-auto'>
               <RightLoader heading="Continue Reading" bottomHeading="Kobra Kal: Ultimate"/>
 
             </div> 
