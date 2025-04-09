@@ -21,7 +21,7 @@ const BookPage = () => {
                 </div>
                 
             </div> 
-            <div>
+            <div className='flex justify-center  w-full md:w-auto'>
               <RightLoader heading="Book Progress" smallHeading={smallHeading} />
             </div>
             

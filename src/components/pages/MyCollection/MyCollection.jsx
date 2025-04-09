@@ -34,9 +34,9 @@ const MyCollection = () => {
            <div className='flex flex-wrap  justify-between'>            {
               completedRead.map((book)=>{
                 return (
-                    <div key={book.id} className='flex flex-col  mt-6 m-auto tracking-tight gap-1 items-center font-[700]'>
-                            <Image src={book.img} className='w-[169px] h-[201px] rounded-2xl' alt={book.title}/>
-                             <h2 className='text-center'>{book.title}</h2>  
+                    <div key={book.id} className='flex flex-col  mt-7 m-auto tracking-tight gap-1 items-center font-[700]'>
+                            <Image src={book.img} className='  w-[210px] h-[220px] md:w-[169px] md:h-[201px] rounded-2xl' alt={book.title}/>
+                             <h2 className='text-center mt-1'>{book.title}</h2>  
                              <h2 className='text-[#4A83F6]'>{book.date}</h2>  
                     </div>
                 )
@@ -46,7 +46,7 @@ const MyCollection = () => {
 
         </div>
 
-        <div>
+        <div className='flex justify-center  w-full md:w-auto'> 
           <RightLoader heading="Continue Reading" bottomHeading="Kobra Kal: Ultimate"/>
         </div>
 

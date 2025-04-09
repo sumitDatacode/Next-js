@@ -3,12 +3,12 @@ import Image from 'next/image'
 import kobra from "@/assets/images/kobra.png"
 const RightLoader = ({heading, smallHeading, bottomHeading}) => {
   return (
-    <div>
  
-    <h2 className='text-3xl font-bold '>{heading}</h2>
+    <div>
+    <h2 className='my-10 text-center text-2xl md:mt-0 font-bold '>{heading}</h2>
     {
        smallHeading ? (
-        <small className='font-[700] text-sm mt-4'>
+        <small className='font-[700] text-sm  '>
             {smallHeading.title}
             <span className='text-[#4A83F6]'> {smallHeading.time}</span>
         </small>
@@ -28,8 +28,8 @@ const RightLoader = ({heading, smallHeading, bottomHeading}) => {
            bottomHeading ? ( <h2 className='text-2xl font-bold text-left'>{bottomHeading}</h2>
            ) : <></>
     }
-     </div>       
-
+    </div>
+  
   )
 }
 
