@@ -39,7 +39,7 @@ const DashboardPage = () => {
                   </div> 
                     
             </div>
-           <div>
+           <div className='flex justify-center  w-full md:w-auto'>
               <RightLoader heading="Continue Reading" bottomHeading="Kobra Kal: Ultimate"/>
 
             </div> 
