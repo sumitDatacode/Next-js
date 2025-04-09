@@ -2,7 +2,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import '@/assets/scss/main.scss'
-import Navbar from '@/components/Navbar'
 import { Menu } from 'lucide-react'; 
 import Sidebar from "@/components/Sidebar";
 import TopNavbar from "@/components/TopNavbar";
@@ -39,7 +38,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 
-     {
+         {
+          // only for login signup and createbook page for hide navbar 
          shouldHideLayout ?  (  
                    children
                       ) : 
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
 
            <div >
                 {/* mobile nav bar  */}
-                    <div className='md:hidden flex mt-10   m-auto justify-between items-center'>
+                    <div className='md:hidden flex mt-10 pl-2 pr-[55px] m-auto justify-between items-center'>
                             <Logo/>
                       
                          
