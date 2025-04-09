@@ -9,8 +9,8 @@ import Bookmark from '../assets/images/bookmark.png'
 import Collection from '../assets/images/collection.png'
 import setting from '../assets/images/setting.png'
 import logOut from '../assets/images/logout.png'
-
-const Sidebar = ({menuStatus}) => {
+import { Flashlight, X } from 'lucide-react'; 
+const Sidebar = ({menuStatus, setMenuIsopen}) => {
 
      const navList = [
         {"href" : "/dashboard" , "text" : "Dashboard", "img": DashboardIcon},
@@ -24,6 +24,8 @@ const Sidebar = ({menuStatus}) => {
         {"href" : "/login" , "text" : "Log Out", "img": logOut},
        
      ]
+
+     
   return (
 
  <>
@@ -31,10 +33,11 @@ const Sidebar = ({menuStatus}) => {
     {
         menuStatus &&  (
                   
- <div className='flex fixed left-0 top-0 h-full  w-[350px]  border-r border-[#282837] justify-between flex-col pt-[40px] items-start  '>
+ <div className='flex fixed z-40 left-0 top-0 h-full bg-[rgb(29,29,42)]  items-center w-full border-r border-[#282837] justify-between flex-col pt-[40px]'>
  <div>
-            <div className="pl-[50px]" >
+            <div className=" flex justify-between" >
             <Logo />
+            <X onClick={() => setMenuIsopen(false)} />
             </div>
         
             <div className='mt-[60px]'>

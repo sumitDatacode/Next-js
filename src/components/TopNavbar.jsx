@@ -21,7 +21,7 @@ const TopNavbar = () => {
 
   return (
    <div className='flex h-15  gap-x-10 mt-[40px] mb-5  justify-between '>
-        <div className=' h-12 w-[644px]  relative '>
+        <div className=' h-12 w-[644px]  relative z-30'>
             <input type="text"  name="" className='border pl-7 rounded-[12px] w-full h-full' id="" />
             <FaSearch className='absolute top-1/2 text-xl  right-3 transform -translate-y-[50%]'/>
           </div>
