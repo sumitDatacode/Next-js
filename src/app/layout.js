@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
 
            <div >
                 {/* mobile nav bar  */}
-                    <div className='md:hidden flex mt-10 pl-2 pr-[55px] m-auto justify-between items-center'>
+                    <div className='md:hidden flex mt-10 pl-2 pr-[9%] sm:pr-[4%] m-auto justify-between items-center'>
                             <Logo/>
                       
                          

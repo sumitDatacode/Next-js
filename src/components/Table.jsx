@@ -19,8 +19,8 @@ const Table = () => {
     <div className='font-[700]'>
       <h2 className='text-2xl'>Reading Plan</h2>
       <div className='flex gap-[210px] mt-12 mb-12'>
-          <h1 className='text-4xl'>Chapters: <span className='text-[#4A83F6]'>20</span></h1>
-          <h1 className='text-4xl'>Days: <span className='text-[#4A83F6]'>20</span></h1>
+          <h1 className='text-[2.5rem]'>Chapters: <span className='text-[#4A83F6]'>20</span></h1>
+          <h1 className='text-[2.5rem]'>Days: <span className='text-[#4A83F6]'>20</span></h1>
     
       </div>
 
