@@ -16,7 +16,7 @@ const Table = () => {
 
 
   return (
-    <div className='font-[700] border mt-12'>
+    <div className='font-[700]  mt-12'>
       <h2 className='text-2xl'>Reading Plan</h2>
       <div className='flex gap-[105] md:gap-[210px] my-6 md:my-12'>
           <h1 className='text-[1.5rem] md:text-[2.5rem]'>Chapters: <span className='text-[#4A83F6]'>20</span></h1>
@@ -24,7 +24,7 @@ const Table = () => {
     
       </div>
 
-      <div className="space-y-6 mb-10 border pr-3">
+      <div className="space-y-6 mb-10  pr-3">
           {table.map((chapter) => (
             <div
               key={chapter.id}
