@@ -1,9 +1,29 @@
 "use client"
 import Logo from '@/components/Logo'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Button from '@/components/Button'
 const CreateBookPage = () => {
+const [formdata, setFormData] = useState({
+  BookTitle: '',
+  BookAuther: '',
+  ChapterNo: ''
+})
 
+
+const inputCHange = (e) =>{
+    setFormData((prev)=>({
+      ...prev,
+      [e.target.name]: e.target.value
+    
+    }))
+    
+}
+
+
+const formSubmit = (e) =>{
+  e.preventDefault();
+  console.log('formsubmitted', formdata)
+}
 
   return (
     <div className='flex justify-center items-center h-screen '>
@@ -12,7 +32,7 @@ const CreateBookPage = () => {
 
              <h2 className='m-4 text-2xl font-[500]'>Create a Book</h2>
 
-             <form className='w-[70%]' > 
+             <form className='w-[70%]' onSubmit={formSubmit}> 
                     {/* <h1 className='mt-8 text-3xl text-center font-[500]'>{heading}</h1> */}
                         <br/>
                     <label className='text-sm'>Book Title</label> <br/>
