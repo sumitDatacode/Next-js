@@ -23,11 +23,11 @@ const inputCHange = (e) =>{
 const formSubmit = (e) =>{
   e.preventDefault();
    
-  if (!formdata || !formdata.email || !formdata.password) {
+  if (!formdata || !formdata.BookTitle ||  !formdata.BookAuther || !formdata.ChapterNo) {
     alert("Please fill in all the fields.");
     return;
   }
-  
+
   console.log('formsubmitted', formdata)
 }
 
