@@ -45,10 +45,14 @@ const Sidebar = ({menuStatus, setMenuIsopen}) => {
             {
                     navList.map((item)=>{
                         return (
-                            <div key={item.href} className='flex gap-4  w-[18rem]  rounded-2xl  text-xl mt-3  p-3 pl-[50px]'>
+                            <Link  key={item.href} href={item.href} >
+                            <div className='flex gap-4  w-[18rem]  rounded-2xl  text-xl mt-3  p-3 pl-[50px]'>
+                                
                                 <Image src={item.img} className='object-contain' alt={item.text}/>
-                                <Link href={item.href}>{item.text} </Link>
+
+                                <p>{item.text}</p>
                             </div>    
+                            </Link>
                         )
                     })
                 }
@@ -61,10 +65,14 @@ const Sidebar = ({menuStatus, setMenuIsopen}) => {
     {
             bottomNavList.map((item)=>{
                 return (
-                    <div key={item.href} className='flex gap-4 rounded-2xl   text-xl mt-1 p-2 pl-[50px]'>
+                    <Link  key={item.href} href={item.href} >
+                    <div className='flex gap-4  w-[18rem]  rounded-2xl  text-xl mt-3  p-3 pl-[50px]'>
+                        
                         <Image src={item.img} className='object-contain' alt={item.text}/>
-                        <Link href={item.href}>{item.text} </Link>
+
+                        <p>{item.text}</p>
                     </div>    
+                    </Link>
                 )
             })
         }
@@ -89,10 +97,14 @@ const Sidebar = ({menuStatus, setMenuIsopen}) => {
                 {
                         navList.map((item)=>{
                             return (
-                                <div key={item.href} className='flex gap-4  w-[18rem]  rounded-2xl  text-xl mt-3  p-3 pl-[50px]'>
+                                <Link  key={item.href} href={item.href} >
+                                <div className='flex gap-4  w-[18rem]  rounded-2xl  text-xl mt-3  p-3 pl-[50px]'>
+                                    
                                     <Image src={item.img} className='object-contain' alt={item.text}/>
-                                    <Link href={item.href}>{item.text} </Link>
+            
+                                    <p>{item.text}</p>
                                 </div>    
+                                </Link> 
                             )
                         })
                     }
