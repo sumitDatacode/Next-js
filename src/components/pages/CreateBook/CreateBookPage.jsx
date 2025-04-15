@@ -22,6 +22,12 @@ const inputCHange = (e) =>{
 
 const formSubmit = (e) =>{
   e.preventDefault();
+   
+  if (!formdata || !formdata.email || !formdata.password) {
+    alert("Please fill in all the fields.");
+    return;
+  }
+  
   console.log('formsubmitted', formdata)
 }
 
