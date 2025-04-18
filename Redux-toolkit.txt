@@ -22,4 +22,18 @@ Basics of React (useState, props, useEffect)
 Set up a store with configureStore
 [
     install dependenci : npm install @reduxjs/toolkit react-redux
+    Why?
+    To keep all your app's global data in one place, instead of passing props deeply.
+
+    🧾 Example:
+
+    Shopping cart data
+
+    Logged-in user info
+
+    App theme (light/dark)
+
+    🛠️ It's like: A school notice board — every classroom (component) can read/write to it.
+
+
 ]
