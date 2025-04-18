@@ -1,0 +1,54 @@
+
+notes here 
+-------------------------------------------
+Today's Task: 
+Basics of React (useState, props, useEffect)
+Set up a store with configureStore
+Create slices with createSlice
+Use useSelector and useDispatch in components
+Handle async with createAsyncThunk
+--------------------------------------------
+
+
+Basics of React (useState, props, useEffect)
+[
+
+    - useState : Used to manage local component state. like count functionallity 
+    - props : Used to pass data from parent to child component.
+    - useEffect : Runs side-effects like API calls or logging
+]
+
+
+Set up a store with configureStore
+[
+   - install dependenci : npm install @reduxjs/toolkit react-redux
+    Why?
+    To keep all your app's global data in one place, instead of passing props deeply.
+
+    🧾 Example:
+
+    Shopping cart data
+
+    Logged-in user info
+
+    App theme (light/dark)
+
+    🛠️ It's like: A school notice board — every classroom (component) can read/write to it.
+
+
+
+
+  -🧠 5. createSlice() – Divide State into Modules
+    Why?
+    To organize your state and actions in one place:
+    State + Reducers + Actions = Slice
+
+    🧾 Example:
+
+    counterSlice for counter logic
+
+    authSlice for login/register
+
+    🛠️ It's like: Keeping maths homework and science homework in different notebooks 📒
+
+]
