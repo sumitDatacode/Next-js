@@ -11,3 +11,4 @@ Handle async with createAsyncThunk
 
 - useState : Used to manage local component state. like count functionallity 
 - props : Used to pass data from parent to child component.
+- useEffect : Runs side-effects like API calls or logging.
