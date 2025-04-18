@@ -19,3 +19,7 @@ Basics of React (useState, props, useEffect)
 ]
 
 
+Set up a store with configureStore
+[
+    install dependenci : npm install @reduxjs/toolkit react-redux
+]
