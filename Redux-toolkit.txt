@@ -21,7 +21,7 @@ Basics of React (useState, props, useEffect)
 
 Set up a store with configureStore
 [
-    install dependenci : npm install @reduxjs/toolkit react-redux
+   - install dependenci : npm install @reduxjs/toolkit react-redux
     Why?
     To keep all your app's global data in one place, instead of passing props deeply.
 
@@ -35,5 +35,20 @@ Set up a store with configureStore
 
     🛠️ It's like: A school notice board — every classroom (component) can read/write to it.
 
+
+
+
+  -🧠 5. createSlice() – Divide State into Modules
+    Why?
+    To organize your state and actions in one place:
+    State + Reducers + Actions = Slice
+
+    🧾 Example:
+
+    counterSlice for counter logic
+
+    authSlice for login/register
+
+    🛠️ It's like: Keeping maths homework and science homework in different notebooks 📒
 
 ]
