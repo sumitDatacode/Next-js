@@ -2,9 +2,12 @@
 notes here 
 -------------------------------------------
 Today's Task: 
+Basics of React (useState, props, useEffect)
 Set up a store with configureStore
 Create slices with createSlice
 Use useSelector and useDispatch in components
 Handle async with createAsyncThunk
 --------------------------------------------
+
+- useState : Used to manage local component state. like count functionallity 
 
