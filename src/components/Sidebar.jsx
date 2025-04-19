@@ -27,7 +27,8 @@ const Sidebar = ({menuStatus, setMenuIsopen}) => {
        
      ]
 
-     const pathname = usePathname()
+     let pathname = usePathname()
+     if(pathname === "/book") pathname = "/mycollection"
  
   return (
 
