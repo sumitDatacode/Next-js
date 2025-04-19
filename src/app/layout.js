@@ -12,7 +12,7 @@ import Logo from "@/components/Logo";
 
 // redux toolkit
 import {Provider} from 'react-redux'
-import {store} from '@/redux/store' 
+import store from '@/redux/store' 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
