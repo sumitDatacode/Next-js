@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from "next/navigation";
+
 import Logo from './Logo';
 import DashboardIcon from '../assets/images/Dashboard-icon.png'
 import Bookmark from '../assets/images/bookmark.png'
@@ -25,7 +27,8 @@ const Sidebar = ({menuStatus, setMenuIsopen}) => {
        
      ]
 
-     
+     const pathname = usePathname()
+     console.log(pathname)
   return (
 
  <>
