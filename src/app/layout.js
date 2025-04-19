@@ -9,6 +9,10 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Logo from "@/components/Logo";
 
+
+// redux toolkit
+import {Provider} from 'react-redux'
+import {store} from '@/redux/store' 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -37,12 +41,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-
+<Provider store={store}>
          {
           // only for login signup and createbook page for hide navbar 
          shouldHideLayout ?  (  
                    children
-                      ) : 
+                      ) :
              (
 
 
@@ -72,7 +76,7 @@ export default function RootLayout({ children }) {
  }
       
        
-      
+      </Provider>
       </body>
     </html>
   );
