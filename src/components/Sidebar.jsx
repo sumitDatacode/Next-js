@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from "next/navigation";
+
 import Logo from './Logo';
 import DashboardIcon from '../assets/images/Dashboard-icon.png'
 import Bookmark from '../assets/images/bookmark.png'
@@ -25,7 +27,9 @@ const Sidebar = ({menuStatus, setMenuIsopen}) => {
        
      ]
 
-     
+     let pathname = usePathname()
+     if(pathname === "/book") pathname = "/mycollection"
+ 
   return (
 
  <>
@@ -45,8 +49,10 @@ const Sidebar = ({menuStatus, setMenuIsopen}) => {
             {
                     navList.map((item)=>{
                         return (
+                            
                             <Link  key={item.href} href={item.href} >
-                            <div className='flex gap-4  w-[18rem]  rounded-2xl  text-xl mt-3  p-3 pl-[50px]'>
+                            <div className={`flex gap-4  w-[18rem]  rounded-2xl  text-xl mt-3  p-4 pl-[50px]  ${
+                         pathname === item.href ? 'bg-[#4A83F6]' : '' }`}>
                                 
                                 <Image src={item.img} className='object-contain' alt={item.text}/>
 
@@ -66,13 +72,14 @@ const Sidebar = ({menuStatus, setMenuIsopen}) => {
             bottomNavList.map((item)=>{
                 return (
                     <Link  key={item.href} href={item.href} >
-                    <div className='flex gap-4  w-[18rem]  rounded-2xl  text-xl mt-3  p-3 pl-[50px]'>
-                        
-                        <Image src={item.img} className='object-contain' alt={item.text}/>
+                            <div className={`flex gap-4  w-[18rem]  rounded-2xl  text-xl mt-3  p-4 pl-[50px]  ${
+                         pathname === item.href ? 'bg-[#4A83F6]' : '' }`}>
+                                
+                                <Image src={item.img} className='object-contain' alt={item.text}/>
 
-                        <p>{item.text}</p>
-                    </div>    
-                    </Link>
+                                <p>{item.text}</p>
+                            </div>    
+                            </Link>
                 )
             })
         }
@@ -98,13 +105,14 @@ const Sidebar = ({menuStatus, setMenuIsopen}) => {
                         navList.map((item)=>{
                             return (
                                 <Link  key={item.href} href={item.href} >
-                                <div className='flex gap-4  w-[18rem]  rounded-2xl  text-xl mt-3  p-3 pl-[50px]'>
+                                <div className={`flex gap-4  w-[18rem]  rounded-2xl  text-xl mt-3  p-4 pl-[50px]  ${
+                             pathname === item.href ? 'bg-[#4A83F6]' : '' }`}>
                                     
                                     <Image src={item.img} className='object-contain' alt={item.text}/>
-            
+    
                                     <p>{item.text}</p>
                                 </div>    
-                                </Link> 
+                                </Link>
                             )
                         })
                     }
