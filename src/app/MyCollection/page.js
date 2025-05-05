@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import MyCollection from '@/components/pages/MyCollection'
 const page = () => {
