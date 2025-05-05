@@ -1,9 +1,9 @@
-"use client"
 import React from 'react'
-const page = ({ params }) => {
+
+const page = () => {
   return (
     <div>
-        user is {params.id}
+      hi
     </div>
   )
 }
